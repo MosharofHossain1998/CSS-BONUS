@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Photo Frame</title>
+
+    <style>
+        .photo-album{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .photo-frame{
+            width: 500px;
+            height: 280px;
+            border: 5px solid blue;
+            border-radius: 10px;
+            position: relative;
+            margin: 100px;
+            overflow: hidden;
+            
+        }
+
+        .photo-frame .photo img{
+            width: 100%;
+          
+        }
+
+        .photo-frame:hover .photo img{
+            transform: scale(1.1);
+            /* transform: skew(-30deg); */
+            /* transform:routate(180deg); */
+            transition: transform 1s;
+        }
+
+        .photo-details{
+            position: absolute;
+            display: none;
+            width: 500px;
+            height: 280px;
+            top: 0;
+        }
+
+        .photo-frame:hover .photo-details{
+            display: block;
+            
+        }
+
+        .photo-frame:hover .photo-details h3{
+            color: white;
+            background-color: blue;
+            text-align: center;
+        }
+
+        .photo-frame:hover .photo-details p{
+            color: white;
+           
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Image Book</h1>
+    <section class="photo-album">
+        <div class="photo-frame">
+            <div class="photo">
+                <img src="images/tiger.jpg" alt="">
+            </div>
+            <div class="photo-details">
+                <h3>Royal Bangal Tiger</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum magni reiciendis necessitatibus doloribus, impedit nihil labore possimus quasi, architecto sint atque ab officiis provident natus neque non asperiores nostrum accusamus.</p>
+            </div>
+        </div>
+
+        <div class="photo-frame">
+            <div class="photo">
+                <img src="images/tiger.jpg" alt="">
+            </div>
+            <div class="photo-details">
+                <h3>Royal Bangal Tiger</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum magni reiciendis necessitatibus doloribus, impedit nihil labore possimus quasi, architecto sint atque ab officiis provident natus neque non asperiores nostrum accusamus.</p>
+            </div>
+        </div>
+        <div class="photo-frame">
+            <div class="photo">
+                <img src="images/tiger.jpg" alt="">
+            </div>
+            <div class="photo-details">
+                <h3>Royal Bangal Tiger</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum magni reiciendis necessitatibus doloribus, impedit nihil labore possimus quasi, architecto sint atque ab officiis provident natus neque non asperiores nostrum accusamus.</p>
+            </div>
+        </div>
+        <div class="photo-frame">
+            <div class="photo">
+                <img src="images/tiger.jpg" alt="">
+            </div>
+            <div class="photo-details">
+                <h3>Royal Bangal Tiger</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum magni reiciendis necessitatibus doloribus, impedit nihil labore possimus quasi, architecto sint atque ab officiis provident natus neque non asperiores nostrum accusamus.</p>
+            </div>
+        </div>
+        <div class="photo-frame">
+            <div class="photo">
+                <img src="images/tiger.jpg" alt="">
+            </div>
+            <div class="photo-details">
+                <h3>Royal Bangal Tiger</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum magni reiciendis necessitatibus doloribus, impedit nihil labore possimus quasi, architecto sint atque ab officiis provident natus neque non asperiores nostrum accusamus.</p>
+            </div>
+        </div>
+        <div class="photo-frame">
+            <div class="photo">
+                <img src="images/tiger.jpg" alt="">
+            </div>
+            <div class="photo-details">
+                <h3>Royal Bangal Tiger</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum magni reiciendis necessitatibus doloribus, impedit nihil labore possimus quasi, architecto sint atque ab officiis provident natus neque non asperiores nostrum accusamus.</p>
+            </div>
+        </div>
+        <div class="photo-frame">
+            <div class="photo">
+                <img src="images/tiger.jpg" alt="">
+            </div>
+            <div class="photo-details">
+                <h3>Royal Bangal Tiger</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum magni reiciendis necessitatibus doloribus, impedit nihil labore possimus quasi, architecto sint atque ab officiis provident natus neque non asperiores nostrum accusamus.</p>
+            </div>
+        </div>
+        <div class="photo-frame">
+            <div class="photo">
+                <img src="images/tiger.jpg" alt="">
+            </div>
+            <div class="photo-details">
+                <h3>Royal Bangal Tiger</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum magni reiciendis necessitatibus doloribus, impedit nihil labore possimus quasi, architecto sint atque ab officiis provident natus neque non asperiores nostrum accusamus.</p>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>

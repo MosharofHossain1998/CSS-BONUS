@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>BOX Position</title>
+
+    <style>
+        /*** Relative Position ***/
+        .container{
+            display: flex;
+        }
+
+        .box{
+            width: 200px;
+            height: 100px;
+            background-color: blue;
+            border: 2px solid red;
+            margin: 5px;
+            text-align: center;
+        }
+
+        .box-2{
+            position: relative;
+            left: 100px;
+            top: 100px;
+        }
+
+        .box-3{
+            z-index: 1;
+            position: relative;
+            left: 50px;
+            top: 50px;
+        }
+
+        .box-4{
+            z-index: 2;
+        }
+
+        /* Absulate Position */
+
+        .Absulate{
+            display: flex;
+            position: relative;
+        }
+
+        .boxA{
+            width: 200px;
+            height: 100px;
+            background-color: red;
+            border: 2px solid blue;
+            margin: 5px;
+            text-align: center;
+        }
+
+        .box-a1{
+            z-index: 1;
+        }
+        .box-a2{
+            position: absolute;
+            top: 80px;
+            left: 80px;
+            
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <h1>Position</h1>
+    <h3>More Position</h3>
+    
+    <section class="container">
+        <div class="box box-1">
+            <h3>box-1</h3>
+        </div>
+        <div class="box box-2">
+            <h3>box-2</h3>
+        </div>
+        <div class="box box-3">
+            <h3>box-3</h3>
+        </div>
+        <div class="box box-4">
+            <h3>box-4</h3>
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>Absoulate Position</h1>
+    <section class="Absulate">
+        <div class="boxA box-a1">
+            <h3>box-1</h3>
+        </div>
+        <div class="boxA box-a2">
+            <h3>box-2</h3>
+        </div>
+        <div class="boxA box-a3">
+            <h3>box-3</h3>
+        </div>
+        <div class="boxA box-a4">
+            <h3>box-4</h3>
+        </div>
+    </section>
+    
+</body>
+</html>
